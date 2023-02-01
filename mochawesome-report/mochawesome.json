@@ -1,0 +1,139 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-02-01T15:06:36.354Z",
+    "end": "2023-02-01T15:06:37.480Z",
+    "duration": 1126,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9a6e2963-aee9-4eac-beb8-b99f0d80f6ed",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c8540a28-49d7-4167-b3bf-8cddee731846",
+          "title": "List Users",
+          "fullFile": "E:\\BelajarAutomationCypress\\nestapi\\test\\scenario\\list-users.test.js",
+          "file": "\\test\\scenario\\list-users.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should successfully get list users",
+              "fullTitle": "List Users Should successfully get list users",
+              "timedOut": false,
+              "duration": 670,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const param = getParams(data.LIST_USERS_PARAM['page']);\nconst response = await reqresApi.list_users(param);\nassert.equal(response.status, 200);\nexpect(response.data).to.be.jsonSchema(schema.VALID_PARAMS);",
+              "err": {},
+              "uuid": "d67f5de8-e1ae-421e-aef8-58fd5be6f5ff",
+              "parentUUID": "c8540a28-49d7-4167-b3bf-8cddee731846",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d67f5de8-e1ae-421e-aef8-58fd5be6f5ff"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 670,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "d92dd06f-7e70-47a0-91e6-132b6579d447",
+          "title": "Register",
+          "fullFile": "E:\\BelajarAutomationCypress\\nestapi\\test\\scenario\\register.test.js",
+          "file": "\\test\\scenario\\register.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should successfull register when insert valid data",
+              "fullTitle": "Register Should successfull register when insert valid data",
+              "timedOut": false,
+              "duration": 417,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await reqresApi.register(data.VALID_REGISTER);\nassert.equal(response.status, 200);",
+              "err": {},
+              "uuid": "43c8ea80-5866-4020-bca0-6f76744029c8",
+              "parentUUID": "d92dd06f-7e70-47a0-91e6-132b6579d447",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "43c8ea80-5866-4020-bca0-6f76744029c8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 417,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
